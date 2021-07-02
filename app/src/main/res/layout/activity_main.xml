@@ -7,6 +7,7 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     android:paddingTop="20dp"
+    android:background="#bbdefb"
     tools:context="com.example.myquizapp.MainActivity"
     >
 
@@ -14,8 +15,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="108dp"
-        android:layout_alignStart="@+id/editName"
-        android:layout_alignLeft="@+id/editName"
+        android:layout_alignStart="@+id/nameC"
+        android:layout_alignLeft="@+id/nameC"
         android:layout_alignParentTop="true"
         android:layout_marginStart="-73dp"
         android:layout_marginLeft="-73dp"
@@ -31,22 +32,30 @@
         android:id="@+id/button"
         android:textSize="30dp"
         android:layout_above="@+id/button2"
-        android:layout_alignLeft="@+id/editName"
-        android:layout_alignStart="@+id/editName"
+        android:layout_alignLeft="@+id/nameC"
+        android:layout_alignStart="@+id/nameC"
         android:layout_marginBottom="25dp"
         android:background="#FF5722"
         android:textColor="#ffffff" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/editName"
-        android:textColor="#df040b"
-        android:hint="Enter your name"
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameC"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="#df040b"
+            android:ems="10"
+            android:id="@+id/editName"
+            android:hint="Enter your name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:layout_width="200dp"
@@ -60,4 +69,5 @@
         android:layout_alignStart="@+id/button"
         android:background="#FF5722"
         android:textColor="#ffffff" />
+
 </RelativeLayout>

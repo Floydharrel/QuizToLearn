@@ -17,29 +17,29 @@ public class QuestionsActivity extends Activity {
     RadioButton rb1,rb2,rb3,rb4;
 
     String questions[] = {
-                            "Which method can be defined only once in a program?",
-                            "Which of these is not a bitwise operator?",
-                            "Which keyword is used by method to refer to the object that invoked it?",
-                            "Which of these keywords is used to define interfaces in Java?",
-                            "Which of these access specifiers can be used for an interface?",
-                            "Which of the following is correct way of importing an entire package ‘pkg’?",
-                            "What is the return type of Constructors?",
-                            "Which of the following package stores all the standard java classes?",
-                            "Which of these method of class String is used to compare two String objects for their equality?",
-                            "An expression involving byte, int, & literal numbers is promoted to which of these?"
+                            "Which keyword is used to return a value inside a method?",
+                            "Which statement is used to stop a loop?",
+                            "Which operator is used to multiply numbers?",
+                            "Which keyword is used to import a package from the JAVA API library?",
+                            "How do you create a method in java?",
+                            "How do you call a method in Java?",
+                            "Which operator can be used to compare two values?",
+                            "Which method can be used to return a string in pper case letters?",
+                            "Which data type is used to create a variable that should store text?",
+                            "To declare an array in Java, define the variable type with:?"
                          };
-    String answers[] = {"main method","<=","this","interface","public","import pkg.*","None of the mentioned","java","equals()","int"};
+    String answers[] = {"return","break","*","import","methodName()","methodName();","==","toUpperCase()","String","[]"};
     String opt[] = {
-                    "finalize method","main method","static method","private method",
-                    "&","&=","|=","<=",
-                    "import","this","catch","abstract",
-                    "Interface","interface","intf","Intf",
-                    "public","protected","private","All of the mentioned",
-                    "Import pkg.","import pkg.*","Import pkg.*","import pkg.",
-                    "int","float","void","None of the mentioned",
-                    "lang","java","util","java.packages",
-                    "equals()","Equals()","isequal()","Isequal()",
-                     "int","long","byte","float"
+                    "return","void","get","break",
+                    "stop","return","break","exit",
+                    "*","x","#","%",
+                    "import","lib","package","getlib",
+                    "methodName[]","(methodName)","methodName.","methodName()",
+                    "(methodName);","methodName;","methodName();","methodName[];",
+                    "==","><","<>","=",
+                    "upperCase()","tuc()","touppercase()","toUpperCase()",
+                    "string","String","myString","Txt",
+                     "{}","[]","()","<>"
                    };
     int flag=0;
     public static int marks=0,correct=0,wrong=0;
